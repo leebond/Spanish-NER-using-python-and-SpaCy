@@ -59,8 +59,6 @@ With that I am able to achieve the following results:
 
 Unconstrained Version
 
-Unconstrained Version
-
 run python script ner_unconstrained.py per normal.
 
 However, note that this file will import spacy_ner_trainer.py.
