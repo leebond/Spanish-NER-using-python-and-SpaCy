@@ -16,7 +16,7 @@ git clone all contents into the same folder
 
 Constrained Version
 run python script ner_constrained.py as per normal
-`> python ner_constrained.py`
+> `python ner_constrained.py`
 
 running the script will generate constrained_results.txt, the model is trained using training and development datasets to predict on the test datset.
 
@@ -60,6 +60,7 @@ With that I am able to achieve the following results:
 Unconstrained Version
 
 run python script ner_unconstrained.py per normal.
+> `python ner_spacy.py`
 
 However, note that this file will import spacy_ner_trainer.py.
 The runtime for this script will take 1.5hrs.
@@ -68,4 +69,4 @@ The script will save the model in ./neroutput. For convenience, I have added my 
 Running the ner_unconstrained_score.py script will load the model (please changeinput name to ./neroutput_gh) and predict on the test dataset. And it will generate the unconst_result.txt file. 
 
 To run the evaluation on the result files, do 
-`> python conlleval.py <result file>`
+> `python conlleval.py <result file>`
