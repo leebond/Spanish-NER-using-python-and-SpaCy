@@ -17,6 +17,7 @@ git clone all contents into the same folder
 Constrained Version
 run python script ner_constrained.py as per normal
 `> python ner_constrained.py`
+
 running the script will generate constrained_results.txt, the model is trained using training and development datasets to predict on the test datset.
 
 Motivation
@@ -47,6 +48,7 @@ The above hyperparameters were selected base empirically base on the overall F1 
 
 Model
 I have only used the Perceptron model because it is already achieve high F1 performance. Hence, I went on further to experiment with the following hyperparameters,
+
 a. Max_iter = 100
 b. Early_stopping = True
 c. Tol = 0.001
@@ -58,12 +60,14 @@ With that I am able to achieve the following results:
 Unconstrained Version
 
 Unconstrained Version
+
 run python script ner_unconstrained.py per normal.
+
 However, note that this file will import spacy_ner_trainer.py.
 The runtime for this script will take 1.5hrs.
 The script will save the model in ./neroutput. For convenience, I have added my own model in this submission.
+
 Running the ner_unconstrained_score.py script will load the model (please changeinput name to ./neroutput_gh) and predict on the test dataset. And it will generate the unconst_result.txt file. 
 
-To run the evaluation on the result files,
-do 
-> python conlleval.py <result file>
+To run the evaluation on the result files, do 
+`> python conlleval.py <result file>`
