@@ -152,7 +152,7 @@ if __name__ == "__main__":
 
 
     j = 0
-    print("Writing to results.txt")
+    print("Writing to constrained_results.txt")
     # format is: word gold pred
     with open("constrained_results.txt", "w") as out:
         for sent in test_sents: 
@@ -164,4 +164,4 @@ if __name__ == "__main__":
                 out.write("{}\t{}\t{}\n".format(word,gold,pred))
         out.write("\n")
 
-    print("Now run: python conlleval.py results.txt")
+    print("Now run: python conlleval.py constrained_results.txt")
